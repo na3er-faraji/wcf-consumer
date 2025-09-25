@@ -1,0 +1,21 @@
+﻿services:
+  api:
+    build:
+      context: .
+      dockerfile: WcfConsumer/Dockerfile
+    container_name: api
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    environment:
+      - Redis__Configuration=redis:6379
+      - Redis__InstanceName=RedisInstance
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: always
