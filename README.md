@@ -1,6 +1,9 @@
-# Country Capital Info REST API
+# WcfConsumer
+In this project, I focused mainly on **object-oriented design**, **decoupling**, and **reusability**.  
+Of course, I could have added more features such as writing **unit tests**, normalizing the **output data**, or even persisting the logs into a database.  
+But the main goal here was to build a service that calls the **WCF method**, retries in case of failure, and finally provides a simple and clear report.  
 
-A **.NET Core REST API** that provides the capital city of a country by consuming the **CountryInfo SOAP Service**. This project follows **SOLID principles**, **Clean Code practices**, **resiliency patterns**, and **Separation of Concerns (SoC)**.
+The emphasis was on the **core functionality**, not on completeness of every possible feature.
 
 ---
 
